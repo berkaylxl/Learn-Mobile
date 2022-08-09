@@ -12,7 +12,7 @@ import {
 
 const App = () => {
    const [key, setkey] = useState("")
-  const CreateKey = () => {
+   const CreateKey = () => {
     var keys = []
     var characters = 'QWERTYUIOPASDFGHJKLZXCVBNMqwertyuopasdfghjklizxcvbnm0123456789!?'
     var charactersLength = characters.length
@@ -21,7 +21,7 @@ const App = () => {
       keys.push(characters.charAt(Math.floor((Math.random() * charactersLength))))
     }
     setkey(keys.join(''))
-  }
+  } 
 
   return (
     <SafeAreaView style={styles.container}>
@@ -55,6 +55,7 @@ const App = () => {
         </TouchableOpacity>
 
       </View>
+      <View></View>
     </SafeAreaView>
   )
 }
